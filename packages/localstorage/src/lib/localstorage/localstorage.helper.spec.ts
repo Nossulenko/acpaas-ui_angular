@@ -115,6 +115,6 @@ describe('parsing JSON', () => {
 		spyOn(window.console, 'warn');
 
 		expect(LocalstorageHelper.parseJSON('test', 'some: data')).toEqual('some: data');
-		expect(window.console.warn).toHaveBeenCalledWith('Parsing key "test" in localstorage failed, ignoring value.');
+		expect(window.console.warn).toHaveBeenCalledWith('Parsing key "agenda" in localstorage failed, ignoring value.');
 	});
 });

@@ -10,7 +10,7 @@ The @acpaas-ui/logo generates an image wrapped in an anchor.
 $ npm install @acpaas-ui/logo
 ```
 
-Import component in **app.module.ts**
+Import component in **app.moduleindex.ts**
 
 ```
 import { LogoModule } from '@acpaas-ui/logo';

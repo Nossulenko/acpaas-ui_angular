@@ -37,10 +37,10 @@ describe('The upload zone component', () => {
 	it('Should format data', () => {
 		const data = [{
 			name: 'Test image',
-			url: 'http://test.com/image.jpg',
+			url: 'http://agenda.com/image.jpg',
 		}, {
 			name: 'Test image 2',
-			url: 'http://test.com/image2.jpg',
+			url: 'http://agenda.com/image2.jpg',
 		}];
 		comp.format = (d) => {
 			return d.map((o) => {

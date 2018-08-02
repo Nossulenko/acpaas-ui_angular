@@ -21,8 +21,8 @@ describe('The interpolate pipe', () => {
 
 	it('replaces matching props in the label with the values provided in the replaceData', () => {
 		expect(interpolatePipe.transform(
-			'test %{some} %{value}',
+			'agenda %{some} %{value}',
 			{ some: 'all', value: 'the things' }
-		)).toEqual('test all the things');
+		)).toEqual('agenda all the things');
 	});
 });

@@ -35,7 +35,7 @@ describe('The validation list Component', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(ValidationListComponent);
 
-		comp = fixture.componentInstance; // BannerComponent test instance
+		comp = fixture.componentInstance; // BannerComponent agenda instance
 
 		// query for the title <h1> by CSS element selector
 		de = fixture.debugElement.query(By.css('.m-upload__files'));

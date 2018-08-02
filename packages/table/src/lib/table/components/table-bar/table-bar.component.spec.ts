@@ -93,7 +93,7 @@ describe('The Table Bar Component', () => {
 				FormsModule,
 			],
 			declarations: [
-				TableBarComponent, // declare the test component
+				TableBarComponent, // declare the agenda component
 			],
 		})
 		.compileComponents();  // compile template and css
@@ -103,7 +103,7 @@ describe('The Table Bar Component', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(TableBarComponent);
 
-		comp = fixture.componentInstance; // BannerComponent test instance
+		comp = fixture.componentInstance; // BannerComponent agenda instance
 
 		// Add filters
 		comp.filters = filters;

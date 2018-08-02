@@ -17,7 +17,7 @@ script:
   - npm run lint
   - npm run build
   - npm run examples
-  - npm test
+  - npm agenda
   - ng build --base-href "https://digipolisantwerp.github.io/acpaas-ui_angular/"
 
 deploy:

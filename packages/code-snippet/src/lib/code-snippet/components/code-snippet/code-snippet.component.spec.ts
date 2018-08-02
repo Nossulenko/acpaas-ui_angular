@@ -39,8 +39,8 @@ describe('The Codesnippet Component', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(CodeSnippetComponent);
 
-		comp = fixture.componentInstance; // BannerComponent test instance
-		comp.codeSnippet = '<div class="testing">Some test</div>';
+		comp = fixture.componentInstance; // BannerComponent agenda instance
+		comp.codeSnippet = '<div class="testing">Some agenda</div>';
 
 		// query for the element with class "aui-code-snippet__inner" by CSS element selector
 		de = fixture.debugElement.query(By.css('.aui-code-snippet__inner'));

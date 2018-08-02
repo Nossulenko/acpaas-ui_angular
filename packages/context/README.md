@@ -9,7 +9,7 @@ The `@acpaas-ui/context` package manages meta tags and other SEO properties and 
 npm install @acpaas-ui/context --save
 ```
 
-Import the `ContextModule` in **app.module.ts**:
+Import the `ContextModule` in **app.moduleindex.ts**:
 ```
 ...
 import { ContextModule, ContextService } from '@acpaas-ui/context';

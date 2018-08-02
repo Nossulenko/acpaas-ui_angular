@@ -18,7 +18,7 @@ Available controls:
 npm install @acpaas-ui/leaflet
 ```
 
-Import component in **app.module.ts**
+Import component in **app.moduleindex.ts**
 ```
 import { LeafletModule } from '@acpaas-ui/leaflet';
 

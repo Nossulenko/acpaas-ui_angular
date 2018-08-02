@@ -956,6 +956,135 @@
           }
         }
       }
+    },
+    "test1": {
+      "root": "packages/test1",
+      "sourceRoot": "packages/test1/src",
+      "projectType": "library",
+      "prefix": "aui",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "packages/test1/tsconfig.lib.json",
+            "project": "packages/test1/ng-package.json"
+          },
+          "configurations": {
+            "examples": {
+              "project": "packages/test1/ng-package.examples.json"
+            },
+            "production": {
+              "project": "packages/test1/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "packages/test1/src/test.ts",
+            "tsConfig": "packages/test1/tsconfig.spec.json",
+            "karmaConfig": "packages/test1/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "packages/test1/tsconfig.lib.json",
+              "packages/test1/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "Header": {
+      "root": "packages/header",
+      "sourceRoot": "packages/header/src",
+      "projectType": "library",
+      "prefix": "aui",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "packages/header/tsconfig.lib.json",
+            "project": "packages/header/ng-package.json"
+          },
+          "configurations": {
+            "examples": {
+              "project": "packages/header/ng-package.examples.json"
+            },
+            "production": {
+              "project": "packages/header/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "packages/header/src/test.ts",
+            "tsConfig": "packages/header/tsconfig.spec.json",
+            "karmaConfig": "packages/header/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "packages/header/tsconfig.lib.json",
+              "packages/header/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "Footer": {
+      "root": "packages/footer",
+      "sourceRoot": "packages/footer/src",
+      "projectType": "library",
+      "prefix": "aui",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "packages/footer/tsconfig.lib.json",
+            "project": "packages/footer/ng-package.json"
+          },
+          "configurations": {
+            "examples": {
+              "project": "packages/footer/ng-package.examples.json"
+            },
+            "production": {
+              "project": "packages/footer/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "packages/footer/src/test.ts",
+            "tsConfig": "packages/footer/tsconfig.spec.json",
+            "karmaConfig": "packages/footer/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "packages/footer/tsconfig.lib.json",
+              "packages/footer/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "styleguide",

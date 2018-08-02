@@ -37,19 +37,19 @@ describe('The SearchFilter Component', () => {
 	});
 
 	it('should set the provided labels and attributes', () => {
-		comp.id = 'test-id';
-		comp.name = 'test-name';
-		comp.label = 'test-label';
-		comp.labelResults = 'test-labelResults';
-		comp.placeholder = 'test-placeholder';
+		comp.id = 'agenda-id';
+		comp.name = 'agenda-name';
+		comp.label = 'agenda-label';
+		comp.labelResults = 'agenda-labelResults';
+		comp.placeholder = 'agenda-placeholder';
 
 		fixture.detectChanges();
 
-		expect(el.querySelector('#test-id-search')).toBeDefined();
-		expect(el.querySelector('input[name="test-id-search"]')).toBeDefined();
-		expect(el.querySelector('.m-search-filter__label').textContent).toContain('test-label');
-		expect(el.querySelector('.m-search-filter__results__title').textContent).toContain('test-labelResults');
-		expect(el.querySelector('.m-search-filter__input input').getAttribute('placeholder')).toBe('test-placeholder');
+		expect(el.querySelector('#agenda-id-search')).toBeDefined();
+		expect(el.querySelector('input[name="agenda-id-search"]')).toBeDefined();
+		expect(el.querySelector('.m-search-filter__label').textContent).toContain('agenda-label');
+		expect(el.querySelector('.m-search-filter__results__title').textContent).toContain('agenda-labelResults');
+		expect(el.querySelector('.m-search-filter__input input').getAttribute('placeholder')).toBe('agenda-placeholder');
 	});
 
 	it('should show a spinner when loading results', () => {
@@ -62,22 +62,22 @@ describe('The SearchFilter Component', () => {
 	});
 
 	it('should show the noResults label when not loading and missing results', () => {
-		comp.labelNoResults = 'test-noResults';
+		comp.labelNoResults = 'agenda-noResults';
 
 		fixture.detectChanges();
 
 		expect(el.querySelectorAll('.m-search-filter__results__item').length).toBe(1);
-		expect(el.querySelector('.m-search-filter__results__item').textContent).toContain('test-noResults');
+		expect(el.querySelector('.m-search-filter__results__item').textContent).toContain('agenda-noResults');
 	});
 
 	it('should show the clear button when there are selected items', () => {
-		comp.labelDeselect = 'test-deselect';
+		comp.labelDeselect = 'agenda-deselect';
 		comp.selectedItems = ['one'];
 
 		fixture.detectChanges();
 
 		expect(el.querySelector('.m-search-filter__clear')).toBeDefined();
-		expect(el.querySelector('.m-search-filter__clear').textContent).toContain('test-deselect');
+		expect(el.querySelector('.m-search-filter__clear').textContent).toContain('agenda-deselect');
 	});
 
 	it('should show the available choices', () => {

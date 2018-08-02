@@ -9,7 +9,7 @@ import { Cell } from '../../types/table.types';
 // ---------- DUMMY FILTERS ----------- //
 @Component({
 	selector: 'aui-dummy-test',
-	template: '<div class="dummy-test">Test</div>',
+	template: '<div class="dummy-agenda">Test</div>',
 })
 export class DummyTestComponent implements Cell {
 	@Input() data: any;
@@ -27,7 +27,7 @@ describe('The Table Cell Component without component', () => {
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
 			declarations: [
-				TableHeaderComponent, // declare the test component
+				TableHeaderComponent, // declare the agenda component
 			],
 		})
 		.compileComponents();  // compile template and css
@@ -36,7 +36,7 @@ describe('The Table Cell Component without component', () => {
 	// synchronous beforeEach
 	beforeEach(() => {
 		fixture = TestBed.createComponent(TableHeaderComponent);
-		comp = fixture.componentInstance; // BannerComponent test instance
+		comp = fixture.componentInstance; // BannerComponent agenda instance
 
 		comp.value = 'Test';
 		fixture.detectChanges();
@@ -64,7 +64,7 @@ describe('The Table Header Component with component', () => {
 		TestBed.configureTestingModule({
 			declarations: [
 				DummyTestComponent,
-				TableHeaderComponent, // declare the test component
+				TableHeaderComponent, // declare the agenda component
 			],
 		});
 
@@ -79,7 +79,7 @@ describe('The Table Header Component with component', () => {
 	// synchronous beforeEach
 	beforeEach(() => {
 		fixture = TestBed.createComponent(TableHeaderComponent);
-		comp = fixture.componentInstance; // BannerComponent test instance
+		comp = fixture.componentInstance; // BannerComponent agenda instance
 
 		comp.value = 'Test';
 		comp.component = DummyTestComponent;
@@ -96,7 +96,7 @@ describe('The Table Header Component with component', () => {
 		expect(deSpan).toBeNull();
 
 		// Something goes wrong...
-		// deComp = fixture.debugElement.query(By.all('dummy-test'));
+		// deComp = fixture.debugElement.query(By.all('dummy-agenda'));
 		// elComp = deComp.nativeElement;
 		// expect(elComp).not.toBeUndefined();
 	});

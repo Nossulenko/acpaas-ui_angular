@@ -28,7 +28,7 @@ npm install @acpaas-ui/table
 ```
 
 
-Import component in **app.module.ts**
+Import component in **app.moduleindex.ts**
 ```
 import { TableModule } from '@acpaas-ui/table';
 
@@ -84,7 +84,7 @@ this.rows = [
 #### activeSorting
 `orderBy`: This option has to be an array of objects. When you do not provide this property, column sorting buttons will be hidden.
 ```
-// Interface: ./src/entities/interfaces.conf.ts
+// Interface: ./src/entities/interfaces.confindex.ts
 interface orderBy {
     key: string;
     order: string; // asc or desc
@@ -100,7 +100,7 @@ this.orderBy = {
 #### columns
 `(TableColumn|string)[]`: An array of TableColumns or an array of strings. Use this option to define and manage the columns of the table. The table does not hide columns or sort columns. It is important to pass only the columns that are visible. The order of the items in the array is the display order of the columns.
 ```
-// Interface: ./src/entities/interfaces.conf.ts
+// Interface: ./src/entities/interfaces.confindex.ts
 interface TableColumnFormat {
     (o: string, key?: string, item?: any): any;
 };

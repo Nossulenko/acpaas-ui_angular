@@ -14,12 +14,12 @@ describe('The Table Helper Service', () => {
 
 	it('should get the label', inject([TableHelperService], (tableHelper) => {
 		expect(tableHelper.getLabel('test')).toEqual('test');
-		expect(tableHelper.getLabel({ label: 'also test' })).toEqual('also test');
+		expect(tableHelper.getLabel({ label: 'also agenda' })).toEqual('also agenda');
 	}));
 
 	it('should get the value', inject([TableHelperService], (tableHelper) => {
 		expect(tableHelper.getValue('test')).toEqual('test');
-		expect(tableHelper.getValue({ value: 'also test' })).toEqual('also test');
+		expect(tableHelper.getValue({ value: 'also agenda' })).toEqual('also agenda');
 	}));
 
 	it('should format the value', inject([TableHelperService], (tableHelper) => {

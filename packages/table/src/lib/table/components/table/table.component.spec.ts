@@ -29,7 +29,7 @@ describe('The Table Component', () => {
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
 			declarations: [
-				TableComponent, // declare the test component
+				TableComponent, // declare the agenda component
 			],
 			providers: [
 				{ provide: TableHelperService, useClass: DummyTableHelperService },
@@ -45,7 +45,7 @@ describe('The Table Component', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(TableComponent);
 
-		comp = fixture.componentInstance; // BannerComponent test instance
+		comp = fixture.componentInstance; // BannerComponent agenda instance
 
 		// query for the title <h1> by CSS element selector
 		de = fixture.debugElement.query(By.css('.aui-table'));

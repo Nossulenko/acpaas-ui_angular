@@ -7,7 +7,7 @@ This module contains one service and four directives that extend your component 
 npm install @acpaas-ui/flyout --save
 ```
 
-Import component in **app.module.ts**
+Import component in **app.moduleindex.ts**
 
 ```
 import { FlyoutModule } from '@acpaas-ui/flyout';

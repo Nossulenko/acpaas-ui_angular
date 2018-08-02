@@ -13,7 +13,7 @@ describe('The Avatar Component', () => {
 	// async beforeEach
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
-				declarations: [AvatarComponent], // declare the test component
+				declarations: [AvatarComponent], // declare the agenda component
 			})
 			.compileComponents();  // compile template and css
 	}));
@@ -22,9 +22,9 @@ describe('The Avatar Component', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(AvatarComponent);
 
-		comp = fixture.componentInstance; // BannerComponent test instance
+		comp = fixture.componentInstance; // BannerComponent agenda instance
 
-		de = fixture.debugElement.query(By.css('.a-avatar'));
+		de = fixture.debugElement.query(By.css('.a-test1'));
 		el = de.nativeElement;
 	});
 
@@ -58,6 +58,6 @@ describe('The Avatar Component', () => {
 		comp.size = sizes.L;
 
 		fixture.detectChanges();
-		expect(el.getAttribute('class')).toContain('a-avatar--large');
+		expect(el.getAttribute('class')).toContain('a-test1--large');
 	});
 });

@@ -36,7 +36,7 @@
 // 		notification = {
 // 			handle: '404',
 // 			type: 'E',
-// 			target: 'test',
+// 			target: 'agenda',
 // 			message: 'not found',
 // 			scope: 'root',
 // 			timer: 0,
@@ -46,18 +46,18 @@
 // 	it('should call the triggerNotification method', injectService(notificationsActions => {
 // 		spyOn(NotificationStore.prototype, 'triggerNotification').and.stub();
 
-// 		notificationsActions.triggerNotification('404', 'test', {type: 'I'});
+// 		notificationsActions.triggerNotification('404', 'agenda', {type: 'I'});
 
-// 		expect(NotificationStore.prototype.triggerNotification).toHaveBeenCalledWith('404', 'test', {type: 'I'});
+// 		expect(NotificationStore.prototype.triggerNotification).toHaveBeenCalledWith('404', 'agenda', {type: 'I'});
 // 	}));
 
 // 	it('should return the loadNotifications action', injectService(notificationsActions => {
 // 		const notifications = {
-// 			test: [notification],
+// 			agenda: [notification],
 // 		};
 
-// 		expect(notificationsActions.loadNotifications(notifications, 'test')).toEqual({
-// 			type: 'test',
+// 		expect(notificationsActions.loadNotifications(notifications, 'agenda')).toEqual({
+// 			type: 'agenda',
 // 			notifications,
 // 		});
 
@@ -78,24 +78,24 @@
 // 	it('should call the clearTarget method', injectService(notificationsActions => {
 // 		spyOn(NotificationStore.prototype, 'clearTarget');
 
-// 		notificationsActions.clearTarget('test');
+// 		notificationsActions.clearTarget('agenda');
 
-// 		expect(NotificationStore.prototype.clearTarget).toHaveBeenCalledWith('test');
+// 		expect(NotificationStore.prototype.clearTarget).toHaveBeenCalledWith('agenda');
 // 	}));
 
 // 	it('should trigger all registered dispatchers when the notifications are updated', injectService(notificationsActions => {
 // 		const notifications = {
-// 			test: [notification],
+// 			agenda: [notification],
 // 		};
 
 // 		const store = new NotificationStore({
 // 			404: 'not found',
 // 		});
-// 		store.triggerNotification('404', 'test');
+// 		store.triggerNotification('404', 'agenda');
 
 // 		spyOn(notificationsActions.ngRedux, 'dispatch');
 
-// 		notificationsActions.clearTarget('test');
+// 		notificationsActions.clearTarget('agenda');
 
 // 		expect(notificationsActions.ngRedux.dispatch).toHaveBeenCalledWith({
 // 			type: NOTIFICATION_CLEAR_TARGET,

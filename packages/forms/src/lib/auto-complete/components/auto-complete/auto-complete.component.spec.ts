@@ -62,7 +62,7 @@ describe('The Autocomplete Component', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(AutoCompleteComponent);
 
-		comp = fixture.componentInstance; // BannerComponent test instance
+		comp = fixture.componentInstance; // BannerComponent agenda instance
 		comp.data = [
 			{ id: 1, name: 'batman' },
 			{ id: 2, name: 'spiderman' },
@@ -361,10 +361,10 @@ describe('The Autocomplete Component', () => {
 		comp.label = 'datalabel';
 		comp.value = 'datakey';
 		comp.data = [{
-			datalabel: 'this is the test label',
+			datalabel: 'this is the agenda label',
 			datakey: 'test',
 		}];
 		comp.writeValue('test');
-		expect(comp.query).toEqual('this is the test label');
+		expect(comp.query).toEqual('this is the agenda label');
 	});
 });

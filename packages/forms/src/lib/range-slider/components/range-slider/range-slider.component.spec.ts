@@ -13,7 +13,7 @@ describe('The RangeSlider Component', () => {
 	// async beforeEach
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
-			declarations: [RangeSliderComponent], // declare the test component
+			declarations: [RangeSliderComponent], // declare the agenda component
 		})
 		.compileComponents();  // compile template and css
 	}));
@@ -22,7 +22,7 @@ describe('The RangeSlider Component', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(RangeSliderComponent);
 
-		comp = fixture.componentInstance; // BannerComponent test instance
+		comp = fixture.componentInstance; // BannerComponent agenda instance
 
 		// query for the title <h1> by CSS element selector
 		de = fixture.debugElement;

@@ -6,7 +6,7 @@ The `@acpaas-ui/localstorage` package allows you to easily store and retrieve da
 npm install @acpaas-ui/localstorage --save
 ```
 
-Import the Localstorage Module in **app.module.ts** and provide a config (optional):
+Import the Localstorage Module in **app.moduleindex.ts** and provide a config (optional):
 ```
 import { LocalstorageModule } from '@acpaas-ui/localstorage';
 
