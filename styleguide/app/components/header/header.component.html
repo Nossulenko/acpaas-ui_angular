@@ -2,7 +2,7 @@
     <div auiHeaderContent>
         <div auiHeaderLogo class="o-header__wrapper">
             <aui-logo title="ACPaaS UI" src="./assets/digipolis-logo.svg"></aui-logo>
-            <a class="u-hide-on-tablet o-header__link" [routerLink]="['/']">ACPaaS UI - Angular UI</a>
+            <a class="u-hide-on-tablet o-header__link" [routerLink]="['/']">ACPaaS UI - Angular module library</a>
             <span class="u-show-on-mobile">
                 <button (click)="pane.togglePane()" class="a-button a-button--navigation has-icon">
                     <i class="fa fa-bars"><span class="u-screen-reader-only">Show menu</span></i>
@@ -12,11 +12,8 @@
     </div>
 
     <div auiHeaderMenuItem>
-		<a [routerLink]="['/modules']" [routerLinkActive]="['is-active']" class="a-button a-button--navigation u-hide-on-mobile">
-			<span>Getting Started</span>
-		</a>
         <a [routerLink]="['/modules']" [routerLinkActive]="['is-active']" class="a-button a-button--navigation u-hide-on-mobile">
-            <span>UI Components</span>
+            <span>Modules</span>
         </a>
     </div>
 </aui-header>

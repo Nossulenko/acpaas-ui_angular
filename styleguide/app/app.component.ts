@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
+
 import { EXAMPLES_ROUTES } from './examples.routes';
 
 @Component({

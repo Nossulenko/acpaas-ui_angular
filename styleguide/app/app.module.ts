@@ -8,7 +8,6 @@ import { ExamplesModules } from './examples.modules';
 import { AppRoutingModule } from './app-routing.module';
 import { Components } from './components/index';
 import { Pages } from './pages/index';
-import { DocumentationComponent } from './documentation/documentation.component';
 
 
 @NgModule({
@@ -16,7 +15,6 @@ import { DocumentationComponent } from './documentation/documentation.component'
 		AppComponent,
 		Components,
 		Pages,
-		DocumentationComponent,
 	],
 	imports: [
 		BrowserModule,

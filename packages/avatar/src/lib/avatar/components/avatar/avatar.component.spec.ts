@@ -24,7 +24,7 @@ describe('The Avatar Component', () => {
 
 		comp = fixture.componentInstance; // BannerComponent test instance
 
-		de = fixture.debugElement.query(By.css('.a-agenda'));
+		de = fixture.debugElement.query(By.css('.a-avatar'));
 		el = de.nativeElement;
 	});
 
@@ -58,6 +58,6 @@ describe('The Avatar Component', () => {
 		comp.size = sizes.L;
 
 		fixture.detectChanges();
-		expect(el.getAttribute('class')).toContain('a-agenda--large');
+		expect(el.getAttribute('class')).toContain('a-avatar--large');
 	});
 });
