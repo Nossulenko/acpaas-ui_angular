@@ -9,7 +9,7 @@
 $ npm install @acpaas-ui/flyout-button --save
 ```
 
-Import component in **app.moduleindex.ts**
+Import component in **app.module.ts**
 
 ```
 import { FlyoutButtonModule } from '@acpaas-ui/flyout-button';

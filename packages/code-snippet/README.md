@@ -29,7 +29,7 @@ An overview of all CDN links can be found [here](https://cdnjs.com/libraries/hig
 npm install @acpaas-ui/code-snippet --save
 ```
 
-Import the CodeSnippetModule in **app.moduleindex.ts**
+Import the CodeSnippetModule in **app.module.ts**
 
 ``` typescript
 import { CodeSnippetModule } from '@acpaas-ui/code-snippet';
@@ -46,7 +46,7 @@ export class AppModule {}
 ## Usage
 
 ### A single code snippet
-In *your.componentindex.ts* file:
+In *your.component.ts* file:
 
 ``` typescript
 public codeExampleJSON = `
@@ -78,7 +78,7 @@ In *your.component.html* file:
 
 ### Multiple code snippets
 
-In *your.componentindex.ts* file:
+In *your.component.ts* file:
 
 ``` typescript
 public codeExamples = [this.codeExampleJS, this.codeExampleJSON];
@@ -118,7 +118,7 @@ export class ContentService {
 }
 ```
 
-In *your.componentindex.ts* file:
+In *your.component.ts* file:
 
 ``` typescript
 public mdExample: string;

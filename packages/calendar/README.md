@@ -9,7 +9,7 @@ The `@acpaas-ui/calendar` package exports a `CalendarComponent` that enables the
 npm install @acpaas-ui/calendar --save
 ```
 
-Import the `CalendarModule` in **app.moduleindex.ts** and provide some (optional) weekday and month labels via the `forChild` method:
+Import the `CalendarModule` in **app.module.ts** and provide some (optional) weekday and month labels via the `forChild` method:
 ```
 import { CalendarModule } from '@acpaas-ui/calendar';
 

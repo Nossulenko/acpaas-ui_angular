@@ -32,7 +32,7 @@ describe('The Column Selector Component', () => {
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
 			declarations: [
-				ColumnSelectorComponent, // declare the agenda component
+				ColumnSelectorComponent, // declare the test component
 			],
 			providers: [
 				{ provide: TableHelperService, useClass: DummyTableHelperService },
@@ -44,7 +44,7 @@ describe('The Column Selector Component', () => {
 	// synchronous beforeEach
 	beforeEach(() => {
 		fixture = TestBed.createComponent(ColumnSelectorComponent);
-		comp = fixture.componentInstance; // BannerComponent agenda instance
+		comp = fixture.componentInstance; // BannerComponent test instance
 
 		// query for the title <h1> by CSS element selector
 		de = fixture.debugElement.query(By.css('.aui-column-selector'));

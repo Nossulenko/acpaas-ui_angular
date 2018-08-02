@@ -27,7 +27,7 @@ describe('The Filter Component', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(ProgressBarComponent);
 
-		comp = fixture.componentInstance; // BannerComponent agenda instance
+		comp = fixture.componentInstance; // BannerComponent test instance
 
 		// query for the title <h1> by CSS element selector
 		de = fixture.debugElement.query(By.css('.aui-progress-bar'));

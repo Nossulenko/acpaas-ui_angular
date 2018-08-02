@@ -31,7 +31,7 @@ describe('The Filter Component', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(InputFilterComponent);
 
-		comp = fixture.componentInstance; // BannerComponent agenda instance
+		comp = fixture.componentInstance; // BannerComponent test instance
 		const f1 = new Filter();
 		comp.filter = f1;
 

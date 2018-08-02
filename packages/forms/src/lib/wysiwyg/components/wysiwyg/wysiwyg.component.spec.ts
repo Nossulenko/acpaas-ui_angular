@@ -21,7 +21,7 @@ describe('The Wysiwyg Component', () => {
 			],
 			declarations: [
 				WysiwygComponent,
-			], // declare the agenda component
+			], // declare the test component
 		})
 		.compileComponents();  // compile template and css
 	}));
@@ -30,7 +30,7 @@ describe('The Wysiwyg Component', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(WysiwygComponent);
 
-		comp = fixture.componentInstance; // BannerComponent agenda instance
+		comp = fixture.componentInstance; // BannerComponent test instance
 
 		// query for the title <h1> by CSS element selector
 		de = fixture.debugElement.query(By.css('.aui-wysiwyg__inner'));

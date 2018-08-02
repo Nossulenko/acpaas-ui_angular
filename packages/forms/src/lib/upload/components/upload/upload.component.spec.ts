@@ -68,7 +68,7 @@ describe('The Upload Component', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(UploadComponent);
 
-		comp = fixture.componentInstance; // BannerComponent agenda instance
+		comp = fixture.componentInstance; // BannerComponent test instance
 
 		// query for the title <h1> by CSS element selector
 		de = fixture.debugElement.query(By.css('.aui-upload'));

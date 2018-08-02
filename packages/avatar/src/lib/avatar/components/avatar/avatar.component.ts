@@ -1,4 +1,4 @@
-import { NgModule, Component, Input, Inject } from '@angular/core';
+import { Component, Input, Inject } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 
 export enum sizes {

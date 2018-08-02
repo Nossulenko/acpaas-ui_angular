@@ -6,7 +6,7 @@ This module provides a progress bar with a max value.
 npm install @acpaas-ui/progress-bar
 ```
 
-Import component in **app.moduleindex.ts**
+Import component in **app.module.ts**
 ```
 import { ProgressBarModule } from '@acpaas-ui/progress-bar';
 

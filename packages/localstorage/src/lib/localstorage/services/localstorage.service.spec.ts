@@ -212,7 +212,7 @@ describe('The Localstorage Service', () => {
 			});
 
 			expect(localstorageService.storageType).toEqual('memory');
-			expect(localstorageService.verifyStorageType).toHaveBeenCalledTimes(3); // 1. agenda, 2. localStorage, 3. memory
+			expect(localstorageService.verifyStorageType).toHaveBeenCalledTimes(3); // 1. test, 2. localStorage, 3. memory
 		}));
 	});
 

@@ -51,19 +51,19 @@ describe('The Context Writer Service', () => {
 
 		it('should render a title', injectService((contextService: ContextWriterService) => {
 			contextService.setTag('title', { title: 'test', titleSuffix: ' suffix' });
-			expect(document.head.querySelector('title').innerText).toBe('agenda suffix');
+			expect(document.head.querySelector('title').innerText).toBe('test suffix');
 		}));
 	});
 
 	describe('Setting tags', () => {
 		it('should render a description', injectService((contextService: ContextWriterService) => {
-			contextService.setTag('description', { description: 'this is a agenda' });
-			expect(document.head.querySelector('[name=description]').getAttribute('content')).toBe('this is a agenda');
+			contextService.setTag('description', { description: 'this is a test' });
+			expect(document.head.querySelector('[name=description]').getAttribute('content')).toBe('this is a test');
 		}));
 
 		it('should change a tag', injectService((contextService: ContextWriterService) => {
-			contextService.setTag('description', { description: 'this is second agenda' });
-			expect(document.head.querySelector('[name=description]').getAttribute('content')).toBe('this is second agenda');
+			contextService.setTag('description', { description: 'this is second test' });
+			expect(document.head.querySelector('[name=description]').getAttribute('content')).toBe('this is second test');
 		}));
 
 		it('should render a tag', injectService((contextService: ContextWriterService) => {
@@ -94,8 +94,8 @@ describe('The Context Writer Service', () => {
 
 		it('should update metatags', injectService((contextService: ContextWriterService) => {
 			const testMeta = {
-				title: 'agenda meta',
-				description: 'agenda the meta tags',
+				title: 'test meta',
+				description: 'test the meta tags',
 				'twitter:card': 'meta summary',
 			};
 
@@ -116,7 +116,7 @@ describe('The Context Writer Service', () => {
 
 			contextService.updateMetaTags(testMeta);
 
-			expect(document.head.querySelector('title').innerText).toEqual('agenda, parent');
+			expect(document.head.querySelector('title').innerText).toEqual('test, parent');
 		}));
 	});
 });

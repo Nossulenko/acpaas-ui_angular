@@ -9,7 +9,7 @@ Renders the user avatar.
 npm install @acpaas-ui/avatar
 ```
 
-Import component in **app.moduleindex.ts**
+Import component in **app.module.ts**
 ```
 import { AvatarModule } from 'aui-component-avatar';
 

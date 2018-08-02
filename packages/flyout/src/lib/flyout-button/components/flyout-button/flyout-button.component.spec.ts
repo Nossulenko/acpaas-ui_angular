@@ -105,7 +105,7 @@ describe('The FlyoutButton Component', () => {
 	it('should not render the transcluded content if flyoutOpen is false', () => {
 		testFixture.detectChanges();
 
-		expect(testEl.querySelector('#agenda-projection')).toBeNull();
+		expect(testEl.querySelector('#test-projection')).toBeNull();
 
 		const btn = testEl.querySelector('button');
 
@@ -114,6 +114,6 @@ describe('The FlyoutButton Component', () => {
 		flyout.componentInstance.flyoutOpen = true;
 		testFixture.detectChanges();
 
-		expect(testEl.querySelector('#agenda-projection')).not.toBeNull();
+		expect(testEl.querySelector('#test-projection')).not.toBeNull();
 	});
 });

@@ -11,7 +11,7 @@ Handle notifications using the `NotificationStore`, with or without redux.
 npm install @acpaas-ui/notification-service
 ```
 
-Import component in **app.moduleindex.ts**, with or without `forRoot()`
+Import component in **app.module.ts**, with or without `forRoot()`
 ```
 import { NotificationsModule } from '@acpaas-ui/notification-service';
 

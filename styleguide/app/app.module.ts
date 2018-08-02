@@ -10,7 +10,6 @@ import { Components } from './components/index';
 import { Pages } from './pages/index';
 
 
-
 @NgModule({
 	declarations: [
 		AppComponent,

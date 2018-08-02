@@ -92,7 +92,7 @@ describe('The Analytics Service', () => {
 
 	it('should be possible to disable autoTriggerPageView', async(inject([Router, GAService], (router: Router, gaService: GAService) => {
 		spyOn(gaService, 'triggerPageView');
-		router.navigate(['/agenda']).then(() => {
+		router.navigate(['/test']).then(() => {
 			expect(gaService.triggerPageView).not.toHaveBeenCalled();
 		});
 	})));

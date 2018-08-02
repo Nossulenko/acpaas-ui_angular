@@ -2354,7 +2354,7 @@ find-replace@^2.0.1:
   resolved "https://registry.yarnpkg.com/find-replace/-/find-replace-2.0.1.tgz#6d9683a7ca20f8f9aabeabad07e4e2580f528550"
   dependencies:
     array-back "^2.0.0"
-    agenda-value "^3.0.0"
+    test-value "^3.0.0"
 
 find-up@^1.0.0:
   version "1.1.2"
@@ -6121,7 +6121,7 @@ term-size@^1.2.0:
 
 test-value@^3.0.0:
   version "3.0.0"
-  resolved "https://registry.yarnpkg.com/agenda-value/-/agenda-value-3.0.0.tgz#9168c062fab11a86b8d444dd968bb4b73851ce92"
+  resolved "https://registry.yarnpkg.com/test-value/-/test-value-3.0.0.tgz#9168c062fab11a86b8d444dd968bb4b73851ce92"
   dependencies:
     array-back "^2.0.0"
     typical "^2.6.1"

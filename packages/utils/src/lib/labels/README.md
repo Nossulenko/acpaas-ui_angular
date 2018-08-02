@@ -6,7 +6,7 @@ The labels module exposes some useful tools to handle (template) labels in isola
 npm install @acpaas-ui/labels
 ```
 
-Import the `LabelsModule` in **app.moduleindex.ts**
+Import the `LabelsModule` in **app.module.ts**
 ```
 import { LabelsModule } from '@acpaas-ui/labels';
 

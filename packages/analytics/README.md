@@ -9,7 +9,7 @@ This service adds an angular layer on top of the Google Analytics `ga()` functio
 npm install @acpaas-ui/analytics --save
 ```
 
-Import the Analytics Module in **app.moduleindex.ts**
+Import the Analytics Module in **app.module.ts**
 ```
 import { AnalyticsModule } from '@acpaas-ui/analytics';
 
