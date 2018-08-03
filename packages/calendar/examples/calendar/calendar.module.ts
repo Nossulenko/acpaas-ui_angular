@@ -1,4 +1,3 @@
-import { CalendarDemoPageComponent } from './pages/demo/demo.page';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CalendarModule } from '@acpaas-ui/ngx-components/calendar';
@@ -12,7 +11,6 @@ import { Pages } from './pages/index';
 		CommonModule,
 		CalendarModule,
 		CodeSnippetModule,
-		CalendarDemoPageComponent,
 	],
 	declarations: [
 		Pages,

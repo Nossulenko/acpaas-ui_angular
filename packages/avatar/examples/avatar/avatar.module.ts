@@ -1,4 +1,3 @@
-import { AvatarDemoPageComponent } from './pages/demo/demo.page';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AvatarModule } from '@acpaas-ui/ngx-components/avatar';
@@ -11,7 +10,6 @@ import { Pages } from './pages/index';
 		CommonModule,
 		AvatarModule,
 		CodeSnippetModule,
-		AvatarDemoPageComponent,
 	],
 	declarations: [
 		Pages,

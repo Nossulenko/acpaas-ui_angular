@@ -1,4 +1,3 @@
-import { SelectableListDemoPageComponent } from './pages/demo/demo.page';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SelectableListModule } from '@acpaas-ui/ngx-components/selectable-list';
@@ -12,7 +11,6 @@ import { Pages } from './pages/index';
 		CommonModule,
 		SelectableListModule,
 		CodeSnippetModule,
-		SelectableListDemoPageComponent,
 	],
 	declarations: [
 		Pages,

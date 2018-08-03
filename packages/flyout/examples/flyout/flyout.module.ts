@@ -1,4 +1,3 @@
-import { FlyoutDemoPageComponent } from './pages/demo/demo.page';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlyoutModule } from '@acpaas-ui/ngx-components/flyout';
@@ -12,7 +11,6 @@ import { Pages } from './pages/index';
 		CommonModule,
 		FlyoutModule,
 		CodeSnippetModule,
-		FlyoutDemoPageComponent,
 	],
 	declarations: [
 		Pages,

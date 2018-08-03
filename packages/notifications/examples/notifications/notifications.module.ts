@@ -1,7 +1,6 @@
-import { NotificationsDemoPageComponent } from './pages/demo/demo.page';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NotificationsModule } from '@acpaas-ui/ngx-components/avatar';
+import { NotificationsModule } from '@acpaas-ui/ngx-components/notifications';
 import { CodeSnippetModule } from '@acpaas-ui/ngx-components/code-snippet';
 
 
@@ -12,7 +11,6 @@ import { Pages } from './pages/index';
 		CommonModule,
 		NotificationsModule,
 		CodeSnippetModule,
-		NotificationsDemoPageComponent,
 	],
 	declarations: [
 		Pages,

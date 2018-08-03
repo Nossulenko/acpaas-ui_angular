@@ -1,4 +1,3 @@
-import { ProgressBarDemoPageComponent } from './pages/demo/demo.page';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProgressBarModule } from '@acpaas-ui/ngx-components/progress-bar';
@@ -12,7 +11,6 @@ import { Pages } from './pages/index';
 		CommonModule,
 		ProgressBarModule,
 		CodeSnippetModule,
-		ProgressBarDemoPageComponent,
 	],
 	declarations: [
 		Pages,

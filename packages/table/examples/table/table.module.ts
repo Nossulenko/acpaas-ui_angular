@@ -1,4 +1,3 @@
-import { TableDemoPageComponent } from './pages/demo/demo.page';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TableModule } from '@acpaas-ui/ngx-components/table';
@@ -12,7 +11,6 @@ import { Pages } from './pages/index';
 		CommonModule,
 		TableModule,
 		CodeSnippetModule,
-		TableDemoPageComponent,
 	],
 	declarations: [
 		Pages,
