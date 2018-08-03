@@ -1,3 +1,4 @@
+import { MapDemoPageComponent } from './pages/demo/demo.page';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MapModule } from '@acpaas-ui/ngx-components/avatar';
@@ -10,6 +11,7 @@ import { Pages } from './pages/index';
 		CommonModule,
 		MapModule,
 		CodeSnippetModule,
+		MapDemoPageComponent,
 	],
 	declarations: [
 		Pages,

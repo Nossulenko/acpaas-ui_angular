@@ -1,3 +1,4 @@
+import { FormsDemoPageComponent } from './pages/demo/demo.page';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@acpaas-ui/ngx-components/forms';
@@ -10,6 +11,7 @@ import { Pages } from './pages/index';
 		CommonModule,
 		FormsModule,
 		CodeSnippetModule,
+		FormsDemoPageComponent,
 	],
 	declarations: [
 		Pages,
