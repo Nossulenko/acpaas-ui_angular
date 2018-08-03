@@ -57,7 +57,7 @@ You can run tests on a single package:
 ng test my-new-package
 ```
 
-Or on the entire library:
+Or on the entire library:````
 
 ```bash
 npm test

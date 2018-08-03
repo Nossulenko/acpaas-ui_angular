@@ -105,5 +105,8 @@
     "typescript": "~2.7.2",
     "webpack-bundle-analyzer": "2.13.1",
     "zone.js": "~0.8.26"
+  },
+  "dependencies": {
+    "test": "0.6.0"
   }
 }
