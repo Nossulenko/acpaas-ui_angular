@@ -1,5 +1,5 @@
-import { AvatarDemoPageComponent } from "./demo/demo.page";
+import { LocalstorageDemoPageComponent } from "./demo/demo.page";
 
 export const Pages = [
-    AvatarDemoPageComponent,
+	LocalstorageDemoPageComponent,
 ];

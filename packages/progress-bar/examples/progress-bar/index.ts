@@ -1,3 +1,3 @@
-export { AvatarDemoPageComponent } from './pages/demo/demo.page';
-export { AvatarExamplesModule } from './avatar.module';
-export { AVATAR_EXAMPLES_ROUTES } from './avatar.routes';
+export { ProgressBarDemoPageComponent } from './pages/demo/demo.page';
+export { ProgressBarExamplesModule } from './progress-bar.module';
+export { PROGRESSBAR_EXAMPLES_ROUTES } from './progress-bar.routes';

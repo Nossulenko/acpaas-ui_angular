@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
 
-import { AvatarDemoPageComponent } from './pages/demo/demo.page';
+import { NotificationsDemoPageComponent } from './pages/demo/demo.page';
 
-export const AVATAR_EXAMPLES_ROUTES: Routes = [
+export const NOTIFICATIONS_EXAMPLES_ROUTES: Routes = [
 	{
 		path: '',
-		component: AvatarDemoPageComponent,
+		component: NotificationsDemoPageComponent,
 		pathMatch: 'full',
 	},
 ];

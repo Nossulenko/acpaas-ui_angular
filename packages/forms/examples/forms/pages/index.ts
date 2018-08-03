@@ -1,5 +1,5 @@
-import { AvatarDemoPageComponent } from "./demo/demo.page";
+import { FormsDemoPageComponent } from "./demo/demo.page";
 
 export const Pages = [
-    AvatarDemoPageComponent,
+	FormsDemoPageComponent,
 ];

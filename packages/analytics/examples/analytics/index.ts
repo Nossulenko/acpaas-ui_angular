@@ -1,3 +1,3 @@
-export { AvatarDemoPageComponent } from './pages/demo/demo.page';
-export { AvatarExamplesModule } from './avatar.module';
-export { AVATAR_EXAMPLES_ROUTES } from './avatar.routes';
+export { AnalyticsDemoPageComponent } from './pages/demo/demo.page';
+export { AnalyticsExamplesModule } from './analytics.module';
+export { ANALYTICS_EXAMPLES_ROUTES } from './analytics.routes';

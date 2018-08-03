@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AvatarModule } from '@acpaas-ui/ngx-components/avatar';
+import { ContextModule } from '@acpaas-ui/ngx-components/context';
 import { CodeSnippetModule } from '@acpaas-ui/ngx-components/code-snippet';
 
 import { Pages } from './pages/index';
@@ -8,11 +8,11 @@ import { Pages } from './pages/index';
 @NgModule({
 	imports: [
 		CommonModule,
-		AvatarModule,
+		ContextModule,
 		CodeSnippetModule,
 	],
 	declarations: [
 		Pages,
 	],
 })
-export class AvatarExamplesModule {}
+export class ContextExamplesModule { }

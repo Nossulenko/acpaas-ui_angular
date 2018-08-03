@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
 
-import { AvatarDemoPageComponent } from './pages/demo/demo.page';
+import { FormsDemoPageComponent } from './pages/demo/demo.page';
 
-export const AVATAR_EXAMPLES_ROUTES: Routes = [
+export const FORMS_EXAMPLES_ROUTES: Routes = [
 	{
 		path: '',
-		component: AvatarDemoPageComponent,
+		component: FormsDemoPageComponent,
 		pathMatch: 'full',
 	},
 ];

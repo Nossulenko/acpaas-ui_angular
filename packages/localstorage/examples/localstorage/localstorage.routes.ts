@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
 
-import { AvatarDemoPageComponent } from './pages/demo/demo.page';
+import { LocalstorageDemoPageComponent } from './pages/demo/demo.page';
 
-export const AVATAR_EXAMPLES_ROUTES: Routes = [
+export const LOCALSTORAGE_EXAMPLES_ROUTES: Routes = [
 	{
 		path: '',
-		component: AvatarDemoPageComponent,
+		component: LocalstorageDemoPageComponent,
 		pathMatch: 'full',
 	},
 ];

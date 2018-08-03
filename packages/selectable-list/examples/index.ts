@@ -1,1 +1,1 @@
-export * from './avatar/index';
+export * from './selectable-list/index';

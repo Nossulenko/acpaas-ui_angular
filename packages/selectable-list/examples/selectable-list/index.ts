@@ -1,3 +1,3 @@
-export { AvatarDemoPageComponent } from './pages/demo/demo.page';
-export { AvatarExamplesModule } from './avatar.module';
-export { AVATAR_EXAMPLES_ROUTES } from './avatar.routes';
+export { SelectableListDemoPageComponent } from './pages/demo/demo.page';
+export { SelectableListExamplesModule } from './selectable-list.module';
+export { SELECTABLELIST_EXAMPLES_ROUTES } from './selectable-list.routes';
